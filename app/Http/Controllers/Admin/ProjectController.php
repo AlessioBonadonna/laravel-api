@@ -21,7 +21,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::paginate(5);
+        $projects = Project::all();
 
 
         return view('admin.projects.index', compact('projects',)); //'languanges'));
